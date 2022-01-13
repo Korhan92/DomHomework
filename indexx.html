@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            padding: 12px;
+            color: rgb(0, 0, 0);
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            width: 100px;
+            margin: 8px;
+        }
+
+        #plus {
+            background-color: #742dbb;
+        }
+
+        #minus {
+            background-color: #742dbb;
+        }
+        #square{
+            background-color: #f2b900;
+        }
+        #sqrt{
+            background-color: #f2b900;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 350px;
+        }
+
+        .bigSpin {
+            margin: auto;
+            margin-left: 10%;
+            margin-top: 10%;
+            background-color: #cdf1ff;
+        }
+
+        .count-area {
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+            
+        }
+
+        .label {
+            margin-right: 10px;
+            font-size: 20px;
+            font-weight: bolder;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            background-color: #d10000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bigSpin">
+            <div class="spin">
+                <label for="number" class="label"> Enter A Value</label>
+                <input type="number" name="number" id="number">
+                <span class="count-area" id="count"></span>
+            </div>
+
+            <div class="button">
+                <button id="plus">INCREASE + </button>
+                <button id="minus">REDUCE -</button>
+                <button id="square">SQUARE </button>
+                <button id="sqrt">SQUARE ROOT</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./scriptt.js"></script>
+</body>
+
+</html>
